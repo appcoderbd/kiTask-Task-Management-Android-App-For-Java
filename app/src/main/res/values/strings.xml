@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">kiTask</string>
+    <string name="developed_by_nazim_uddin">Developed by Nazim Uddin</string>
+    <string name="home">Home</string>
+    <string name="welcome_back">welcome back!</string>
+    <string name="project_summary">Project Summary</string>
+    <string name="_0">0</string>
+    <string name="new_task">New Task</string>
+    <string name="complete">Complete</string>
+    <string name="today">Today</string>
+    <string name="routine">Routine</string>
+    <string name="home_menu">Home</string>
+    <string name="event_menu">Event</string>
+    <string name="task_menu">Task</string>
+    <string name="profile_menu">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="graph_menu">Graph</string>
+    <string name="in_progress">In progress</string>
+    <string name="see_all">See all</string>
+    <string name="enter_the_type_of_routine">Enter the type of routine.</string>
+    <string name="routine_type">Routine Type</string>
+    <string name="start_time">Start Time</string>
+    <string name="_07_30_am">07:30 AM</string>
+    <string name="_12_30_pm">12:30 PM</string>
+    <string name="end_time">End Time</string>
+    <string name="what_is_the_work_routine">What is the work routine?</string>
+    <string name="routine_work">Routine Work</string>
+    <string name="work_day">Work Day</string>
+    <string name="high">High</string>
+    <string name="work_priority">Work Priority</string>
+    <string name="friday">Friday</string>
+    <string name="todo_menu">TODO</string>
+    <string name="enter_the_today_task_name">Enter the today task name</string>
+    <string name="today_task_name">Today task name</string>
+    <string name="today_task_description">Today Task Description</string>
+    <string name="add_todo">ADD TODO</string>
+    <string name="todo_list_name">ToDo List Name</string>
+    <string name="todo_list_description">ToDo List Description</string>
+    <string name="description">Description</string>
+    <string name="app_blocked_message">This app is blocked. Please try later.</string>
+    <string name="add_event">ADD EVENT</string>
+</resources>

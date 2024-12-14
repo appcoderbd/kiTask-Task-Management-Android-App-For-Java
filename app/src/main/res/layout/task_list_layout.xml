@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/item_bg"
+    android:layout_marginBottom="8dp"
+    >
+
+    <TextView
+        android:id="@+id/showTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/end_sec"
+        android:text="Task Name"
+        android:fontFamily="@font/ibrand"
+        android:textSize="15sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pi_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showTaskName"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#009688"
+        android:layout_marginTop="5dp"
+        app:cardElevation="0dp"
+        >
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:paddingTop="3dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ibrand"
+            android:textSize="13sp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+    
+    <TextView
+        android:id="@+id/start_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pi_card"
+        android:text="Start"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ibrand"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/start_date"
+        app:layout_constraintTop_toBottomOf="@id/pi_card"
+        android:text="Duration"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ibrand"
+        android:textSize="13sp"
+        android:layout_marginStart="10dp"
+        />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/end_sec"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+            <ImageView
+                android:id="@+id/view_task"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/right"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/task_status"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/hourglass"
+                app:layout_constraintStart_toStartOf="parent"
+                android:scaleType="centerInside"
+                android:padding="15sp"
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/task_progress"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:indeterminate="false"
+        android:progress="50"
+        android:max="100"
+        android:layout_marginTop="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/end_sec"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/duration" />
+
+
+
+    <!-- Percentage Text -->
+    <TextView
+        android:id="@+id/progress_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:text="50%"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ibrand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/end_sec"
+        app:layout_constraintTop_toBottomOf="@id/duration"
+        android:gravity="center"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_menu"
+        android:title="@string/home_menu" />
+
+    <item
+        android:id="@+id/event"
+        android:icon="@drawable/calender_menu"
+        android:title="@string/event_menu" />
+
+    <item
+        android:id="@+id/graph"
+        android:icon="@drawable/graph_menu"
+        android:title="@string/graph_menu"
+        />
+
+    <item
+        android:id="@+id/task_list"
+        android:icon="@drawable/list_menu"
+        android:title="@string/todo_menu" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_menu"
+        android:title="@string/profile_menu" />
+
+</menu>

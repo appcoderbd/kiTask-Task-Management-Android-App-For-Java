@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#F8F1F1</color>
+    <color name="text_black">#1D201F</color>
+
+    <color name="primaryActiveColor">#152C70</color> <!-- Purple Blue -->
+    <color name="primaryDarkColor">#0F2564</color> <!-- Darker shade -->
+    <color name="accentColor">#03DAC5</color> <!-- Teal -->
+    <color name="gray">#9E9E9E</color> <!-- Medium Gray -->
+    <color name="lightGray">#D3D3D3</color> <!-- Light Gray -->
+    <color name="darkGray">#616161</color> <!-- Dark Gray -->
+    <color name="teal_200">#FF8080</color>
+
+
+
+
+</resources>

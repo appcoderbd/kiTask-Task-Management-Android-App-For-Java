@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/background"
+    android:padding="15dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/welcome_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:fontFamily="@font/ibrand"
+            android:textSize="24sp"
+            android:textColor="@color/text_black"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_section"
+        android:layout_margin="10dp"
+        android:text="@string/project_summary"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/text_black"
+        />
+
+    <LinearLayout
+        android:id="@+id/task_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pSummary"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_task"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_first"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/icon_one"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_one"
+                android:src="@drawable/pencil"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/total_count"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_one"
+                android:text="@string/_0"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/task_type_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/total_count"
+                android:text="@string/new_task"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/complete_task"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_secund"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/icon_tow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_one"
+                android:src="@drawable/checkmark"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/total_count_tow"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_tow"
+                android:text="@string/_0"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/task_type_tow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/total_count_tow"
+                android:text="@string/complete"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/today_task"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_three"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/icon_three"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_one"
+                android:src="@drawable/today"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/total_count_three"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_three"
+                android:text="@string/_0"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/task_type_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/total_count_three"
+                android:text="@string/today"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/routing"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_four"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/icon_four"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_one"
+                android:src="@drawable/event"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/total_count_four"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_four"
+                android:text="@string/_0"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/task_type_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/total_count_four"
+                android:text="@string/routine"
+                android:gravity="center"
+                android:fontFamily="@font/ibrand"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/in_progress_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_category"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/in_progress"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_medium"
+        />
+
+
+    <TextView
+        android:id="@+id/see_all_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_category"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/see_all"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_medium"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_progress_text"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

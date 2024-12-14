@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button_shape"
+    android:padding="15dp"
+    android:layout_margin="5dp"
+    android:id="@+id/clickEvent"
+    >
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Routine Types"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/text_black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_type_name"
+        android:layout_marginTop="5dp"
+        android:text="Start Time: 09:30 AM"
+        android:fontFamily="@font/ibrand"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_start_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_type_name"
+        android:layout_marginTop="5dp"
+        android:text="End Time: 10:30 AM"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ibrand"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_time"
+        android:layout_marginTop="5dp"
+        android:text="Day: Sunday"
+        android:fontFamily="@font/ibrand"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_priority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_day"
+        app:layout_constraintTop_toBottomOf="@id/tv_end_time"
+        android:layout_marginTop="5dp"
+        android:text="Priority: High"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ibrand"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_day"
+        android:layout_marginTop="5dp"
+        android:text="This Work"
+        android:fontFamily="@font/ibrand"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

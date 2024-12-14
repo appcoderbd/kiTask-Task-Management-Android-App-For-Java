@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="100"
+    android:canRetrieveWindowContent="true"
+    android:packageNames="com.facebook.katana,
+                          com.instagram.android,
+                          com.zhiliaoapp.musically,
+                          com.snapchat.android,
+                          com.twitter.android,
+                          com.whatsapp,
+                          org.telegram.messenger,
+                          com.imo.android.imoim,
+                          com.viber.voip,
+                          com.google.android.youtube,
+                          com.netflix.mediaclient,
+                          com.amazon.avod.thirdpartyclient,
+                          in.startv.hotstar,
+                          com.tencent.ig,
+                          com.dts.freefireth,
+                          com.king.candycrushsaga,
+                          com.android.chrome,
+                          com.android.vending,
+                          com.spotify.music"
+    android:accessibilityFlags="flagDefault" />
+
+
