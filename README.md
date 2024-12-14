@@ -68,7 +68,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/kiTask.git
+   git clone https://github.com/appcoderbd/kiTask.git
    ```
 2. Open the project in Android Studio.
 3. Sync Gradle files and ensure dependencies are installed.
