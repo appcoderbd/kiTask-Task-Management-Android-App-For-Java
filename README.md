@@ -53,7 +53,12 @@
 
 ## Screenshots
 
-(Include some screenshots of your app here to showcase the UI and functionality.)
+![Screenshot 1](assets/screenshots/Screenshot_1.jpg)
+![Screenshot 2](assets/screenshots/Screenshot_2.jpg)
+![Screenshot 3](assets/screenshots/Screenshot_3.jpg)
+![Screenshot 4](assets/screenshots/Screenshot_4.jpg)
+![Screenshot 5](assets/screenshots/Screenshot_5.jpg)
+![Screenshot 6](assets/screenshots/Screenshot_6.jpg)
 
 ---
 
